@@ -93,8 +93,8 @@ Each stage is designed with hazard management to maintain data integrity, thanks
 ---
 
 ## **Contributors**
-- Alessandro Marchei
+- [Alessandro Marchei](https://github.com/alessandromarchei)
 - Silvia Capozzoli
-- Tommaso Terzano
+- [Tommaso Terzano](https://github.com/TommiTerza)
 
 For more details, refer to the full project documentation in the `docs/report.pdf' file, where the complete report of the architecture is presented.
