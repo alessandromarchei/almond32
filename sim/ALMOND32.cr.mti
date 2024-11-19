@@ -1,0 +1,102 @@
+{C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/000-globals.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/000-globals.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package myTypes
+
+} {} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-CMP.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-CMP.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity CMP
+-- Compiling architecture structural of CMP
+
+} {} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-CU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-CU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package myTypes
+-- Compiling entity CU
+-- Compiling architecture dlx_cu_hw of CU
+
+} {} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-DRAM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-DRAM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity DRAM
+-- Compiling architecture Behavioral of DRAM
+
+} {} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-FFD.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-FFD.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FFD
+-- Compiling architecture BEHAVIORAL of FFD
+
+} {} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-MUX2to1.vhd} {0 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-MUX2to1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+** Error: (vcom-11) Could not find work.constants.
+** Error (suppressible): C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-MUX2to1.vhd(3): (vcom-1195) Cannot find expanded name "work.constants".
+** Error: C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-MUX2to1.vhd(3): Unknown expanded name.
+** Error: C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-MUX2to1.vhd(5): VHDL Compiler exiting
+** Warning: (vcom-31) Unable to unlink file "C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/MODELSIM/work/_lock".
+Permission denied. (errno = EACCES)
+
+} {6.0 7.0 8.0 10.0} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-CWBU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-CWBU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package myTypes
+-- Compiling entity CWBU
+-- Compiling architecture BEHAVIORAL of CWBU
+
+} {} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-BHT.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-BHT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package MATH_REAL
+-- Compiling entity BHT
+-- Compiling architecture Behavioral of BHT
+
+} {} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-FWDU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-FWDU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity FWDU
+-- Compiling architecture BEHAVIORAL of FWDU
+
+} {} {}} {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-LOGIC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/aless/Dropbox (Politecnico Di Torino Studenti)/micro/files/Files/DLX_vhd/a.a-LOGIC.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity LOGIC
+-- Compiling architecture structural of LOGIC
+
+} {} {}}

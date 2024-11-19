@@ -1,0 +1,73 @@
+#############################################################
+#						DLX ANALYSIS SCRIPT						#
+#############################################################
+
+#Delete the working directory -> to clean everything
+file delete -force "work"
+echo *************** Previous work directory deleted ****************
+
+# Create a work directory
+file mkdir "work"
+echo *************** New work directory created *********************
+
+
+# analysis of the VHDL files
+analyze -f vhdl -lib WORK ../src/000-globals.vhd
+analyze -f vhdl -lib WORK ../src/constants.vhd
+#
+
+
+# DATAPATH 
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.b-BHT_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.c-CWBU_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.d-FFD_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.e-HDU_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.f-FWDU_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.g-MUX2to1_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.h-MUX3to1_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.i-MUX4to1_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.j-MUX5to1_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.k-PCADDER_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.l-REG_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.m-RF_v1.vhd
+
+#ALU
+
+##ADDER
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a.a.a.a.a-FA_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a.a.a.a-RCAN_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a.a.a-CARRY_SELECTOR_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a.a-SUM_GENERATOR_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a.b.a-PG_BLOCK_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a.b.b-G_BLOCK_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a.b.c-PG_NETWORK_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a.b-CARRY_GENERATOR_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.a-ADDER.core/a.b.a.a-ADDER_v1.vhd
+##
+
+#REST OF THE ALU
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.f-AND_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.e-CMP_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.d.c-ND4_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.d.b-ND3_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.d.a-IV_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.d-LOGIC_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.c-SHIFTER_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.b.a-ENCODER_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a.b-MULTIPLIER_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b.a-ALU.core/a.b.a-ALU_v1.vhd
+#
+
+#TOP LEVEL ENTITIES
+analyze -f vhdl -lib WORK ../src/a.a-CU_v1.vhd
+analyze -f vhdl -lib WORK ../src/a.b-DataPath.core/a.b-DATAPATH_v1.vhd
+
+analyze -f vhdl -lib WORK ../src/a-DLX_v1.vhd
+#END ANALYSIS
+
+#elaborate top level entity
+elaborate DLX -architecture dlx_rtl -lib WORK
+
+#uniquify
+link
+

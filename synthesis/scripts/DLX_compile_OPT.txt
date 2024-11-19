@@ -1,0 +1,41 @@
+#############################################################
+#						DLX COMPILE SCRIPT					#
+#############################################################
+
+# this script serves to synthesize the design and by setting specific constrains on clock and max propagation delays
+
+#prepare load model for innovus
+set_wire_load_model -name 5K_hvratio_1_4
+
+
+# Timing constraints after the timing report
+create_clock -name MY_CLK -period 1.5 Clk
+
+report_clock > results/clock_OPT.txt
+	
+# adding the SKEW uncertainty to the clock in order to perform a more realistic optimization		
+set_clock_uncertainty 0.05 [get_clocks MY_CLK]
+
+# specify maximum path lengths (frequency optimization) due to previous slack of -0.79ns 
+set_max_delay 1.5 -from [all_inputs] -to [all_outputs]
+
+# OPTIMIZED SYNTHESIS(TIMING CONSTRAINTS)
+compile -map_effort high
+
+# Timing, Area & Power report
+
+report_timing > results/timing_DLX_OPT.txt
+report_area > results/area_DLX_OPT.txt
+
+# for the power analysis, use the verbose command to report additional information about cells and nets
+report_power -verbose > results/power_DLX_OPT.txt
+
+# power report of cells and nets
+report_power -cell > results/cell_DLX_OPT.txt
+report power -net  > results/net_DLX_OPT.txt
+
+# generating the POST SYNTHESIS NETLISTS
+write -hierarchy -format ddc -output post_synthesis/DLX.ddc
+write -hierarchy -format vhdl -output post_synthesis/DLX.vhdl
+write -hierarchy -format verilog -output post_synthesis/DLX.v
+write_sdc post_synthesis/DLX.sdc

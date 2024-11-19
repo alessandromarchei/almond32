@@ -1,0 +1,23 @@
+#############################################################
+#						DLX COMPILE SCRIPT					#
+#############################################################
+
+# this script serves to synthesize the design and by setting specific constrains on clock and max propagation delays
+
+
+# Timing constraints
+create_clock -name MY_CLK -period 2 Clk
+
+report_clock > results/clock_NOOPT.txt
+
+# adding the SKEW uncertainty to the clock in order to perform a more realistic optimization		
+set_clock_uncertainty 0.05 [get_clocks MY_CLK]
+
+
+# NON-OPTIMIZED SYNTHESIS
+compile
+
+#obtain max delay without optimization in order to generate the timing performances
+report_timing > results/timing_DLX_NOOPT.txt
+report_area > results/area_DLX_NOOPT.txt
+report_power -verbose > results/power_DLX_NOOPT.txt

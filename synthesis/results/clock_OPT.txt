@@ -1,0 +1,22 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'DLX' contains 6 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : DLX
+Version: S-2021.06-SP4
+Date   : Thu Oct 19 00:59:19 2023
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+MY_CLK           1.50   {0 0.75}                      {Clk}
+--------------------------------------------------------------------------------
+1

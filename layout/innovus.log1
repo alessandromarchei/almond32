@@ -1,0 +1,204 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.11-s130_1, built Wed Aug 5 15:53:11 PDT 2020
+Options:	
+Date:		Thu Oct 19 00:49:14 2023
+Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (12cores*12cpus*QEMU Virtual CPU version 2.5+ 16384KB)
+OS:		CentOS Linux release 7.6.1810 (Core) 
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set defHierChar /
+Set Default Input Pin Transition as 0.1 ps.
+<CMD> set delaycal_input_transition_delay 0.1ps
+<CMD> set fpIsMaxIoHeight 0
+<CMD> set init_gnd_net gnd
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_oa_search_lib {}
+<CMD> set init_pwr_net vdd
+<CMD> set init_verilog dlx.v
+<CMD> set init_lef_file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef
+<CMD> init_design
+#% Begin Load MMMC data ... (date=10/19 00:50:32, mem=567.9M)
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:50:37, mem=568.1M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:50:42, mem=568.2M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:50:43, mem=568.2M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:50:44, mem=568.2M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:51:40, mem=568.1M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:51:41, mem=568.1M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:51:42, mem=568.1M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:51:43, mem=568.1M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> set defHierChar /
+Set Default Input Pin Transition as 0.1 ps.
+<CMD> set delaycal_input_transition_delay 0.1ps
+<CMD> set fpIsMaxIoHeight 0
+<CMD> set init_gnd_net gnd
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_oa_search_lib {}
+<CMD> set init_pwr_net vdd
+<CMD> set init_verilog dlx.v
+<CMD> set init_lef_file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:51:55, mem=568.3M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:51:56, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:51:57, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:01, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:17, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:17, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:17, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:17, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:18, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:18, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:21, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+**ERROR: (TCLCMD-989):	cannot open SDC file 'SUM.sdc' for mode 'coherent-synthesis'
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:22, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:22, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:22, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:22, mem=568.4M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+<CMD> set defHierChar /
+Set Default Input Pin Transition as 0.1 ps.
+<CMD> set delaycal_input_transition_delay 0.1ps
+<CMD> set fpIsMaxIoHeight 0
+<CMD> set init_gnd_net gnd
+<CMD> set init_mmmc_file Default.view
+<CMD> set init_oa_search_lib {}
+<CMD> set init_pwr_net vdd
+<CMD> set init_verilog dlx.v
+<CMD> set init_lef_file /eda/dk/nangate45/lef/NangateOpenCellLibrary.lef
+<CMD> init_design
+% Begin Load MMMC data ... (date=10/19 00:52:51, mem=568.7M)
+Extraction setup Started 
+Extraction setup Started 
+Extraction setup Started 
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu Oct 19 00:53:08 2023
+  Total CPU time:     0:01:20
+  Total real time:    0:03:56
+  Peak memory (main): 572.66MB
+
+
+*** Memory Usage v#2 (Current mem = 814.863M, initial mem = 280.285M) ***
+*** Message Summary: 0 warning(s), 20 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:20, real=0:03:54, mem=814.9M) ---

@@ -1,0 +1,38 @@
+#############################################################
+#						DLX COMPILE SCRIPT					#
+#############################################################
+
+# this script serves to synthesize the design by minimizing the power
+
+
+# Timing constraints after the timing report
+create_clock -name MY_CLK -period 2 Clk
+
+report_clock > results/clock_OPT.txt
+	
+# adding the SKEW uncertainty to the clock in order to perform a more realistic optimization		
+set_clock_uncertainty 0.05 [get_clocks MY_CLK]
+
+# set power constraint at about 30% reduction with respect to the power consumed by the optimized case
+# previous case was 8.3624 uW
+set_max_dynamic_power 6 mw
+
+# OPTIMIZED SYNTHESIS(TIMING CONSTRAINTS)
+compile -map_effort high
+
+# Timing, Area & Power report
+
+report_timing > results/timing_DLX_POPT.txt
+report_area > results/area_DLX_POPT.txt
+
+# for the power analysis, use the verbose command to report additional information about cells and nets
+report_power -verbose > results/power_DLX_POPT.txt
+
+# power report of cells and nets
+report_power -cell > results/cell_DLX_POPT.txt
+report power -net  > results/net_DLX_POPT.txt
+
+# generating the POST SYNTHESIS NETLISTS
+write -hierarchy -format ddc -output post_synthesis/DLX-POPT.ddc
+write -hierarchy -format vhdl -output post_synthesis/DLX-POPT.vhdl
+write -hierarchy -format verilog -output post_synthesis/DLX-POPT.v
