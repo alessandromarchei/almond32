@@ -33,7 +33,9 @@ Almond-32 is a custom 32-bit microprocessor developed as part of a Master's proj
 
 ## **Architecture**
 ### **Block Diagram**
-Refer to `architecture_diagram.png` for a visual representation of the system.
+A block scheme of the architecture is shown below : 
+
+![Block Diagram](docs/pics/DLX_full.png)
 
 ### **Core Units:**
 1. **Control Unit (CU)**: Hardwired for instruction decoding and pipeline management.
@@ -66,6 +68,7 @@ Detailed instruction formats and examples can be found in the `docs/instruction_
 
 Each stage is designed with hazard management to maintain data integrity, thanks to the **Hazard Detection Unit (HDU)**.
 
+![Hazard detection unit](docs/pics/HDU-3.png)
 ---
 
 ## **Components**
@@ -74,6 +77,11 @@ Each stage is designed with hazard management to maintain data integrity, thanks
 - **Forwarding Unit**: Resolves data hazards dynamically.
 - **Control Unit**: Provides synchronization and generates control signals for each stage.
 
+![ALU](docs/pics/ALU.png)
+
+![Branch Prediction](docs/pics/BHT.png)
+
+![Forwarding Unit](docs/pics/FWDU.png)
 ---
 
 ## **Synthesis and Results**
@@ -86,9 +94,19 @@ Each stage is designed with hazard management to maintain data integrity, thanks
 ## **How to Run**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/almond32.git
+   git clone https://github.com/alessandromarchei/almond32.git
    ```
-2. Navigate to the project directory and follow the simulation instructions in `docs/simulation.md`.
+2. In Modelsim/QuestaSim or a general verification environment, navigate to the `sim` directory:
+   ```bash
+   cd almond32/sim
+   ```
+3. Run the simulation script:
+   ```bash
+   do simulation.tcl
+   ```
+4. Observe the waves and verify the processor's functionality.
+
+5. Try various code examples in the "asm_tests" directory, to try various compiled codes and see the processor's behavior. You need to move the desired .txt file into the sim directory with the name of "test.mem.asm" and run the simulation.
 
 ---
 
